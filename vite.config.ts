@@ -4,5 +4,8 @@ import react from "@vitejs/plugin-react";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/web-2024-template/", // Add this line
+  server: {
+    host: true, // Listen on all interfaces
+    port: 5173,
+  },
 });
